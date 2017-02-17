@@ -79,7 +79,8 @@ class PipelineController extends Controller
     	}
     }
     private function __getList()
-    {
+    {	
+    	
     	$list=$this->get_one_page_data($this->page,$this->pipeline,'adminList','adminLength',[]);
     	return $this->r(['page'=>$this->page->getPage(),'list'=>$list]);
     }
